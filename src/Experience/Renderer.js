@@ -17,7 +17,6 @@ export default class Renderer {
             canvas: this.canvas,
             antialias: true
         });
-        console.log(this.instance);
         this.instance.toneMapping = THREE.CineonToneMapping
         this.instance.toneMappingExposure = 1.75
         this.instance.shadowMap.enabled = true

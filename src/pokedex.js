@@ -3,11 +3,12 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
 
-class Pokedex {
+export default class Pokedex {
 
     constructor(region) {
         this.region = region;
         createBody(region);
+        const gltfLoader = new GLTFLoader();
     }
 
     createBody(region) {
@@ -46,10 +47,3 @@ class Pokedex {
         // implement pokeAPI
     }
 }
-
-
-const pokedex = {
-    pokedex: 'soon to be pokedex'
-};
-
-export default pokedex;
